@@ -35,8 +35,8 @@ movies_sorted_by_year_asc = sorted(movies, key=lambda movie: movie.rok)
 movies_sorted_by_year_desc= sorted(movies, key=lambda movie: movie.rok, reverse=True)
 
 # sortowanie alfabetyczne po tytule
-movies_sorted_by_title = sorted(movies, key=lambda movie: movie.ocena)
+movies_sorted_by_title = sorted(movies, key=lambda movie: movie.tytul)
 
 print("\nFilmy posortowane alfabetycznie po tytule")
-print(movies_sorted_by_year_desc)
+print(movies_sorted_by_title)
 
