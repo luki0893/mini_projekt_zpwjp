@@ -38,11 +38,11 @@ class Car:
     def calculate_depreciation(self, current_year):
         age = current_year - self.year
         depreciation_variable = 0.06
-        depreciation = (age * depreciation_variable * self.price) + (self.mileage * 0.01)
+        depreciation = (age * depreciation_variable * self.price) + (self.mileage * 0.03)
         new_value =  max(0, self.price - depreciation)
         return new_value
 
-c1 = Car("Opel", "Astra", 2014, 210000, 96000)
+c1 = Car("Opel", "Astra", 2014, 240000, 96000)
 c2 = Car("VW", "Golf", 2017, 192000, 101000)
 c3 = Car("BMW", "M3", 2019, 155000, 213000)
 
