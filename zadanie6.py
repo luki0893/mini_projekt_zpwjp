@@ -38,7 +38,7 @@ class Car:
     def calculate_depreciation(self, current_year):
         age = current_year - self.year
         depreciation_variable = 0.06
-        depreciation = (age * depreciation_variable * self.price) + (self.mileage * 0.05)
+        depreciation = (age * depreciation_variable * self.price) + (self.mileage * 0.01)
         new_value =  max(0, self.price - depreciation)
         return new_value
 
